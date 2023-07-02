@@ -1,0 +1,247 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: Arial, Helvetica, Sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+  min-height: 400dvh;
+  position: relative;
+}
+header{
+  background-color: white;
+  height: 69px;
+  width: 93dvw;
+  box-shadow: 0px 6px 30px 7px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+  margin: auto;
+}
+img#logo-4News-header{
+  height: 69px;
+}
+div#menu-hamburguer{
+  width: 60px;
+  height: 14px;
+}
+div.tres-tracinhos{
+  height: 2px;
+  width: 15px;
+  background-color: black;
+}
+.tres-tracinhos#traço-meio{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+div#botao-assinar{
+  height: 30px;
+  width: 60px;
+  background-color: rgb(96, 138, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+#botao-assinar > a{
+  color: black;
+  font-size: 0.9em;
+}
+main{
+  width: 83dvw;
+  min-height: 100dvh;
+  margin: auto;
+  padding-top: 10dvh;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+p#introduçao{
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+div.espaço-sob-paragrafo{
+  height: 7.5dvh;
+}
+img.imagem-noticia{
+  width: 83dvw;
+  border-radius: 8px 8px 0px 0px;
+}
+div.espaço-sob-imagem{
+  height: 5dvh;
+}
+h1.titulo-noticia{
+  text-align: left;
+  font-size: 1.6em;
+  text-decoration: underline;
+  line-height: 1.6em;
+}
+div.espaço-sob-titulo{
+  height: 5dvh;
+}
+p.texto-noticia{
+  text-align: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 
+  em;
+  line-height: 1.8em;
+}
+div#main-celular{
+  display: block;
+}
+div#main-computador{
+  display: none;
+}
+div#opçoes-menu{
+  width: 50dvw;
+  height: 100dvh;
+  position: fixed;
+  top: 69px;
+  left: -50dvw;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0px 12px 20px 8px rgba(0, 0, 0, 0.20);
+  overflow: hidden;
+  display: none;
+  animation: aparecer-menu 0.2s linear both;
+  border-radius: 0px 10px 10px 0px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+#opçoes-menu a{
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  display: block;
+  width: 50dvw;
+  text-align: left;
+  padding: 10px 0px 10px 20px;
+}
+#opçoes-menu a:hover{
+  color: rgb(100, 159, 180);
+  text-decoration: underline;
+  /*
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.692), rgba(119, 119, 119, 0));
+  */
+}
+.aparecer-menu{
+  animation: aparecer-menu 0.5s linear both;
+}
+.desaparecer-menu{
+  animation: desaparecer-menu 0.5s linear both;
+}
+
+@keyframes aparecer-menu {
+  0%{
+      left: -50dvw;
+  }
+  100%{
+      left: 0;
+  }
+}
+@keyframes desaparecer-menu {
+  0%{
+      left: 0;
+  }
+  100%{
+      left: -50dvw;
+  }
+}
+
+footer{
+  width: 83dvw;
+  padding: 10dvh 2dvw;
+  margin: auto;
+  
+}
+footer#footer-celular{
+  display: block;
+  margin-bottom: 15dvh;
+}
+footer#footer-computador{
+  display: none;
+}
+div#traço-footer{
+  width: 80dvw;
+  height: 1px;
+  background-color: rgba(170, 170, 170, 0.63);
+  margin: auto;
+  margin-bottom: 10dvh;
+}
+div#conteudo-footer{
+  display: block;
+}
+div#logo-assinatura{
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 50px;
+}
+img#logo-footer{
+  width: 250px;
+}
+p#introduçao{
+  text-align: justify;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+div#botao-assinar-footer{
+  background-color: rgb(96, 138, 255);
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  width: 180px;
+  color: black;
+}
+footer a{
+  text-decoration: none;
+  display: block;
+  width: 200px;
+}
+div#seta-subir{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -60px;
+  cursor: pointer;
+}
+#seta-subir img{
+  width: 40px;
+}
+section#pos-footer{
+  width: 100dvw;
+  background-color: rgb(77, 77, 77);
+  color: rgb(212, 212, 212);
+  text-align: center;
+  padding: 5px 0px;
+  font-size: 0.8em;
+  position: relative;
+  
+}
+
+
+/*página de assinatura*/
+
+a#botao-voltar{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+img#seta{
+  width: 30px;
+}
+img#xicara-triste{
+  margin-top: 15dvh;
+  width: 70dvw;
+}
+h1#NF{
+  font-size: 2em;
+  color: rgb(69, 89, 96);
+}
